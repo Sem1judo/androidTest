@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent"
+    tools:context=".ui.AuthFragment">
+
+    <TextView
+        android:id="@+id/pick"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/chlea_r"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:text="@string/play_via"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="56sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/back_arrow_ic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.12" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/email_btnv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/chlea_r"
+        android:letterSpacing="0.1"
+        android:text="@string/email"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_percent="0.75" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/anon_btnv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/chlea_r"
+        android:letterSpacing="0.1"
+        android:text="@string/anon"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_btnv"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintWidth_percent="0.75" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
